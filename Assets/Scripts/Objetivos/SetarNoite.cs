@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class SetarNoite : Objetivo {
     
-    bool playerEstaNoTrigger = false;
     bool eNoite = false;
     bool animando = false;
 
@@ -54,15 +53,17 @@ public class SetarNoite : Objetivo {
         }
     }
 
-    void OnTriggerEnter2D(Collider2D col){
-        if(col.CompareTag("Player")){
-            playerEstaNoTrigger = true;
-            texto.color = Color.green;
-        }
+    protected override void OnTriggerEnter2D(Collider2D col){
+        base.OnTriggerEnter2D(col);
+        if(!playerEstaNoTrigger) return;
+        
+        texto.color = Color.green;
     }
 
-    void OnTriggerExit2D(Collider2D col){
-        playerEstaNoTrigger = false;
+    protected override void OnTriggerExit2D(Collider2D col){
+        base.OnTriggerExit2D(col);
+        if(playerEstaNoTrigger) return;
+        
         texto.color = Color.red;
     }
 }

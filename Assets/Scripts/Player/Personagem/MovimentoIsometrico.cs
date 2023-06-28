@@ -9,12 +9,21 @@ public class MovimentoIsometrico : MonoBehaviour {
     Vector2 direcao;
 
     public Vector2 RawInput {get; private set;}
+    public bool _travado;
+    public bool travado {get => _travado; set {
+            RawInput = Vector2.zero;
+            direcao = Vector2.zero;
+            _travado = value;
+        }
+    }
 
     void Awake(){
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update(){
+        if(travado) return;
+
         RawInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         direcao = RawInput;
         ArrumarForcaDoInput();

@@ -63,7 +63,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 2.8125
+  orthographic size: 3.375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -276,9 +276,10 @@ GameObject:
   - component: {fileID: 8993741422926870308}
   - component: {fileID: 8993741422926870310}
   - component: {fileID: 8993741422926870313}
+  - component: {fileID: 1455588602}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -327,6 +328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 1
+  _travado: 0
 --- !u!114 &8993741422926870308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,3 +379,15 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0022871837, y: -0.1594953}
   m_Size: {x: 0.20254424, y: 0.14112155}
   m_Direction: 1
+--- !u!114 &1455588602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8993741422926870315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef8e551be5b087245ac44fb2e866db7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
