@@ -45,6 +45,14 @@ public class DialogMaker : Dialogo {
 
     List <Roteiro> curDialogos = new List<Roteiro>();
 
+    protected override void Update(){
+        base.Update();
+
+        if(uiCriarDialogos.activeInHierarchy && Input.GetKeyDown(KeyCode.Escape)){
+            Voltar();
+        }
+    }
+
     void Awake(){
         SetupSelecaoDePersonagem();
         SetupCriacaoDeDialogo();

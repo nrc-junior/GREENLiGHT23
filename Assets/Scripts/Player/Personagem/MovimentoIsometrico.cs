@@ -19,6 +19,11 @@ public class MovimentoIsometrico : MonoBehaviour {
 
     void Awake(){
         rb = GetComponent<Rigidbody2D>();
+        Cenario.TELEPORTAR_PLAYER += Teleportar;
+    }
+
+    void OnDisable(){
+        Cenario.TELEPORTAR_PLAYER -= Teleportar;
     }
 
     void Update(){
@@ -32,11 +37,17 @@ public class MovimentoIsometrico : MonoBehaviour {
     /// <summary> divide por 2 se estiver apertando os dois botões ao mesmo tempo, pra n aumentar a velocidade  </summary>
     void ArrumarForcaDoInput(){
         if(direcao.magnitude > 1){
-            direcao *= 0.707107f;
+            direcao *= 2f;
+            direcao.y /= 4f;
+            direcao.x /= 2;
         }
     }
 
     void FixedUpdate(){
         rb.MovePosition(rb.position + ((direcao * velocidade) * Time.fixedDeltaTime));
+    }
+
+    public void Teleportar(Vector3 posicao){
+
     }
 }

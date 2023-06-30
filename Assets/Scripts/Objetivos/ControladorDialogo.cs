@@ -118,8 +118,8 @@ public class ControladorDialogo : MonoBehaviour{
         }else{
         
             if(dialogData.disparaEvento){
-                string evento = dialogData.textoDispararEvento.ToLower().Trim();
-                comando_sair = evento == "sair" || evento == "exit";
+                string evento = dialogData.textoDispararEvento;
+                comando_sair = evento.ToLower().Trim() == "sair" || evento.ToLower().Trim() == "exit";
                 eventosOuvidos.Add(evento);
             }
 
@@ -201,8 +201,8 @@ public class ControladorDialogo : MonoBehaviour{
         estaEscolhendo = false;
 
         if(opcao.disparaEvento){
-            string evento = opcao.textoDispararEvento.ToLower().Trim();
-            comando_sair = evento == "sair" || evento == "exit";
+            string evento = opcao.textoDispararEvento;
+            comando_sair = evento.ToLower().Trim() == "sair" || evento.ToLower().Trim() == "exit";
             
             if(comando_sair){
                 Sair();

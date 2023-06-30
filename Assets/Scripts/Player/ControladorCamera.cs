@@ -21,7 +21,7 @@ public class ControladorCamera : MonoBehaviour {
         Vector3 posAlvoAtual = alvoParaSeguir.position;
 
         if(Vector2.Distance(thisTransform.position, posAlvoAtual) > 0.001f ){
-            posAlvoAtual = Vector2.Lerp(thisTransform.position, posAlvoAtual, velocidade * Time.fixedDeltaTime);
+            posAlvoAtual = Vector2.Lerp(thisTransform.position, posAlvoAtual, velocidade * Time.deltaTime);
         }
 
         posAlvoAtual.z = thisTransform.position.z;
