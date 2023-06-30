@@ -391,7 +391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 118.5, y: 0}
+  m_AnchoredPosition: {x: 117.08333, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2599847212929583015
@@ -1132,7 +1132,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 148.5, y: 0}
+  m_AnchoredPosition: {x: 147.08333, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5332490944111928863
@@ -1690,6 +1690,7 @@ GameObject:
   - component: {fileID: 8993741422926870310}
   - component: {fileID: 8993741422926870313}
   - component: {fileID: 1455588602}
+  - component: {fileID: 5758074569764598199}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1805,9 +1806,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef8e551be5b087245ac44fb2e866db7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
   nome: {fileID: 6950549121216158580}
   dialogo: {fileID: 5511091101695161109}
-  opcao: {fileID: 1094894500133717578}
+  prefOpcao: {fileID: 0}
   containerDialogo: {fileID: 2539038434608956856}
   containerOpcao: {fileID: 465335960421170391}
   profilePic: {fileID: 6081483433184366358}
+  movimento: {fileID: 0}
+--- !u!114 &5758074569764598199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8993741422926870315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc65d70a6d176554fa527ae0d6336b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MenuPause: {fileID: 0}

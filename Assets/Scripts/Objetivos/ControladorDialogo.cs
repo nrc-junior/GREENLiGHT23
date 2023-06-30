@@ -238,4 +238,6 @@ public class ControladorDialogo : MonoBehaviour{
     public void LimparEventos(){
         eventosOuvidos.Clear();
     }
+
+
 }
