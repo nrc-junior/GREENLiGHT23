@@ -1,8 +1,29 @@
 using UnityEngine;
 
 public class Dialogo : Objetivo {
+    /// <summary> classe para transformar o que foi digitado para json. </summary>
+    [System.Serializable]
+    public class Data {
+        public string ator = null;
+        public Roteiro.Data[] dialogos;
+        
+        public Data(){
+
+        }
+        public Data(string nome, Roteiro.Data[] dialogos = null){
+            ator = nome;
+
+            if(dialogos != null){
+                Debug.Log(dialogos.Length);
+                this.dialogos = dialogos;
+            }
+        }
+    }
+
     public bool estaAtivo = true;
     public string dialogoNome;
+
+    public string dialogo {get; set;}
 
     void Start()    {
         
@@ -18,7 +39,11 @@ public class Dialogo : Objetivo {
     }
     
     protected virtual void PlayDialog(){
-        ControladorDialogo.instancia.CarregarDialogo(dialogoNome);
+        if(string.IsNullOrEmpty(dialogo)){
+            ControladorDialogo.instancia.CarregarDialogo(dialogoNome);
+        }else{
+            ControladorDialogo.instancia.TocarDialogo(dialogo);
+        }
     }
 
     // protected override void OnTriggerEnter2D(Collider2D col){

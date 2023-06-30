@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Objetivo : MonoBehaviour {
     protected bool playerEstaNoTrigger = false;
-
+    
     protected virtual void OnTriggerEnter2D(Collider2D col){
         if(col.CompareTag("Player")){
             playerEstaNoTrigger = true;

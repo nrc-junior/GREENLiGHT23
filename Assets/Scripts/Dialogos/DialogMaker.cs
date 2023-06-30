@@ -30,32 +30,20 @@ public class DialogMaker : Dialogo {
     [Header("Criação Dialogos")]
     [SerializeField] Button btnAddDialogo;
     [SerializeField] Button btnVoltar;
-    [SerializeField] DialogoData prefabDialogo;
+    [SerializeField] Roteiro prefabDialogo;
     RectTransform containerDialogos;
+
+    [SerializeField] Dialogo testDialog;
+    [SerializeField] RamosDialogo horizontalOption;
+
 
     bool alterouENaoSalvou = false;
 
-    Dictionary<string, DialogoSerializado> conteudoDialogos = new Dictionary<string, DialogoSerializado>();
-    DialogoSerializado curSelecionado;
+    Dictionary<string, Dialogo.Data> conteudoDialogos = new Dictionary<string, Dialogo.Data>();
+    Dialogo.Data roteirosAtual;
     
-    /// <summary> classe para transformar o que foi digitado para json. </summary>
-    [System.Serializable]
-    public class DialogoSerializado{
-        public string ator = null;
-        public DialogoData.Data[] dialogos;
-        
-        public DialogoSerializado(string nome, DialogoData.Data[] dialogos = null){
-            ator = nome;
 
-            if(dialogos != null){
-                Debug.Log(dialogos.Length);
-                this.dialogos = dialogos;
-            }
-        }
-    }
-
-
-    List <DialogoData> curDialogos = new List<DialogoData>();
+    List <Roteiro> curDialogos = new List<Roteiro>();
 
     void Awake(){
         SetupSelecaoDePersonagem();
@@ -77,8 +65,8 @@ public class DialogMaker : Dialogo {
                 }
             });
 
-            conteudoDialogos.Add(nome, new DialogoSerializado(nome));    
-            if(btnPersonagem.isOn) curSelecionado = conteudoDialogos[nome];
+            conteudoDialogos.Add(nome, new Dialogo.Data(nome));    
+            if(btnPersonagem.isOn) roteirosAtual = conteudoDialogos[nome];
         }
 
         uiGerenciadorDialogos.SetActive(false);
@@ -90,6 +78,7 @@ public class DialogMaker : Dialogo {
         btnVoltar.onClick.AddListener(Voltar);
         uiCriarDialogos.SetActive(false);
         prefabDialogo.gameObject.SetActive(false);
+        horizontalOption.gameObject.SetActive(false);
     }
 
     void SetupSalvar(){
@@ -101,32 +90,37 @@ public class DialogMaker : Dialogo {
     void Voltar(){
         uiCriarDialogos.SetActive(false);
         controle.travado = false;
+        testDialog.dialogo = Serializar();
     }
 
     protected override void PlayDialog(){
         uiCriarDialogos.SetActive(true);
         controle.travado = true;
 
-        foreach (DialogoData _dialogo in curDialogos) {
-            _dialogo.ator = curSelecionado.ator;
+        foreach (Roteiro _dialogo in prefabDialogo.transform.parent.GetComponentsInChildren<Roteiro>()) {
+            _dialogo.ator = roteirosAtual.ator;
         }
     }
 
-    void QuandoDeletarDialogo(DialogoData data){
-        data.DELETADO -= QuandoDeletarDialogo;
-        curDialogos.Remove(data);
+    void QuandoDeletarDialogo(Roteiro roteiro){
+        roteiro.data.parent?.childrens.Remove(roteiro);
+        roteiro.DELETADO -= QuandoDeletarDialogo;
+        curDialogos.Remove(roteiro);
         alterouENaoSalvou = true;
     }
+
     void CriarDialogo(){
         CriarDialogo(null);
     }
 
-    void CriarDialogo(DialogoData.Data curData = null){
-        DialogoData newDialog = GameObject.Instantiate(prefabDialogo, prefabDialogo.transform.parent);
-        newDialog.data.falaDoProtagonista = true;
-        newDialog.ator = curSelecionado.ator;
-        newDialog.DELETADO += QuandoDeletarDialogo;
+    Roteiro CriarDialogo(Roteiro.Data curData = null){
+        Roteiro newDialog = GameObject.Instantiate(prefabDialogo, prefabDialogo.transform.parent);
+        newDialog.data.falaDoProtagonista = curData == null ? true : curData.falaDoProtagonista;
+        newDialog.ator = curData == null || string.IsNullOrEmpty(curData._ator) ? roteirosAtual.ator : curData._ator;
 
+        newDialog.DELETADO += QuandoDeletarDialogo;
+        newDialog.SETOU_OPCAO += QuandoSetarOpcao;
+        
         newDialog.gameObject.SetActive(true);
         LayoutRebuilder.ForceRebuildLayoutImmediate(containerDialogos);
         
@@ -138,6 +132,8 @@ public class DialogMaker : Dialogo {
         }else{
             alterouENaoSalvou = true;
         }
+        
+        return newDialog;
     }
 
     void CarregarDialogo(){
@@ -169,31 +165,108 @@ public class DialogMaker : Dialogo {
         }
     }
 
+    void QuandoSetarOpcao(Roteiro roteiro, bool isBranch){
+        RamosDialogo alreadyBranched = roteiro.transform.parent.GetComponent<RamosDialogo>();
+
+
+        if(alreadyBranched && !isBranch){
+            alreadyBranched.transform.GetSiblingIndex();
+            Transform novoRoteiro = CriarDialogo(roteiro.data).transform;
+            alreadyBranched.RemoverOpcao(roteiro);
+            Destroy(roteiro.gameObject);
+
+            novoRoteiro.transform.SetSiblingIndex(alreadyBranched.transform.GetSiblingIndex()+1);
+            btnAddDialogo.transform.parent.SetAsLastSibling();
+        }
+
+        if(isBranch){
+            Roteiro addedRoteiro;
+
+            if(roteiro.transform.parent.GetChild(roteiro.transform.GetSiblingIndex()-1).TryGetComponent(out alreadyBranched) && alreadyBranched.isActiveAndEnabled && alreadyBranched.temEspaco){
+                alreadyBranched.ator = roteirosAtual.ator;
+                addedRoteiro = alreadyBranched.AddRoteiro(roteiro);
+
+            }else{
+                alreadyBranched = GameObject.Instantiate(horizontalOption, horizontalOption.transform.parent);
+                alreadyBranched.NOVO_DIALOGO += QuandoRamoHorizontalCriaOpcao;
+                alreadyBranched.ator = roteirosAtual.ator;
+                alreadyBranched.gameObject.SetActive(true);
+                alreadyBranched.transform.SetParent(roteiro.transform.parent);
+                alreadyBranched.transform.SetSiblingIndex(roteiro.transform.GetSiblingIndex());
+                addedRoteiro = alreadyBranched.AddRoteiro(roteiro);
+            }
+            
+            var uis = alreadyBranched.GetComponentsInChildren<RectTransform>();
+            foreach (var item in uis)            {
+                LayoutRebuilder.ForceRebuildLayoutImmediate(item);
+            }
+            
+            btnAddDialogo.transform.parent.SetAsLastSibling();
+            
+            // linka os eventos do roteiro
+            addedRoteiro.DELETADO += QuandoDeletarDialogo;
+            addedRoteiro.SETOU_OPCAO += QuandoSetarOpcao;
+        }
+    }
+
+    public void QuandoRamoHorizontalCriaOpcao(Roteiro roteiro){
+        roteiro.SETOU_OPCAO += QuandoSetarOpcao;
+    }
+
     void CarregarDialogoEscolhido(string path){
-        DialogoSerializado desserializado = JsonUtility.FromJson<DialogoSerializado>(File.ReadAllText(path));
+        Dialogo.Data desserializado = JsonUtility.FromJson<Dialogo.Data>(File.ReadAllText(path));
         SetDialogosAtual(desserializado);
     }
 
     void SalvarDialogo(){
-        var path = StandaloneFileBrowser.SaveFilePanel("Salvar Roteiro", "", "Roteiro " + curSelecionado.ator, "dialog");
+
+        var path = StandaloneFileBrowser.SaveFilePanel("Salvar Roteiro", "", "Roteiro " + roteirosAtual.ator, "dialog");
         if(string.IsNullOrEmpty(path)) return;
-        
-        List<DialogoData.Data> datas = new List<DialogoData.Data>();
-        
-        foreach(var _dialog in curDialogos ){
-            datas.Add(_dialog.data);
+
+        File.WriteAllText(path, Serializar());
+        alterouENaoSalvou = false;
+    }
+
+    string Serializar(){
+        Transform content = prefabDialogo.transform.parent;
+        Dialogo.Data data = new Data();
+
+        List<Roteiro.Data> serializado = new List<Roteiro.Data>();
+
+        for (var i = 0; i < content.childCount; i++){
+            GameObject obj = content.GetChild(i).gameObject;
+            if(!obj.activeSelf) continue;
+
+            RamosDialogo ramificacao;
+            Roteiro dialogo;
+
+            
+            if(obj.TryGetComponent(out ramificacao)){
+                
+                for (var j = 0; j < ramificacao.roots.Count; j++){
+                    // * escreve a coluna de dialogo na root da opção.
+                    Roteiro optionBranch = ramificacao.roots[j];
+
+                    optionBranch.data.childrens = new Roteiro.Data[optionBranch.childrens.Count];
+                    for (var k = 0; k < optionBranch.childrens.Count; k++){
+                        optionBranch.data.childrens[k] = optionBranch.childrens[k].data;
+                    }
+                    
+                    serializado.Add(optionBranch.data);
+                }
+
+            }else if(obj.TryGetComponent(out dialogo)){
+                serializado.Add(dialogo.data);
+            }
         }
 
-        curSelecionado.dialogos = datas.ToArray();
-
-        string json = JsonUtility.ToJson(curSelecionado, true);
-        File.WriteAllText(path, json);
-        alterouENaoSalvou = false;
+        roteirosAtual.dialogos = serializado.ToArray();
+        return JsonUtility.ToJson(roteirosAtual, true);
     }
 
 
     void SelecionouPersonagem(string nome){
-        curSelecionado = conteudoDialogos[nome];
+        roteirosAtual = conteudoDialogos[nome];
     } 
 
     protected override void OnTriggerEnter2D(Collider2D col){
@@ -205,12 +278,12 @@ public class DialogMaker : Dialogo {
     } 
     
     protected override void OnTriggerExit2D(Collider2D col){
-        base.OnTriggerEnter2D(col);
+        base.OnTriggerExit2D(col);
         uiGerenciadorDialogos.SetActive(false);
     } 
 
 
-    void SetDialogosAtual(DialogoSerializado desserializado){
+    void SetDialogosAtual(Dialogo.Data desserializado){
         foreach (Toggle btnPersonagem in containerPersonagens.GetComponentsInChildren<Toggle>()){
             string nome = btnPersonagem.GetComponentInChildren<Text>().text;
             bool ativo = nome == desserializado.ator; 
@@ -218,17 +291,104 @@ public class DialogMaker : Dialogo {
             if(ativo) break;
         }
 
-        for (var i = 0; i < curDialogos.Count; i++){
-            curDialogos[i].DELETADO -= QuandoDeletarDialogo;
-            DestroyImmediate(curDialogos[i].gameObject);
+        Transform content = prefabDialogo.transform.parent;
+        
+        for (var i = 0; i < content.childCount; i++){
+            GameObject obj = content.GetChild(i).gameObject;
+
+            if(!obj.activeSelf) continue;
+
+
+            if(obj.GetComponent<RamosDialogo>() || obj.GetComponent<Roteiro>()){
+                Destroy(obj);
+            }
         }
 
         curDialogos.Clear();
-        curSelecionado = desserializado;
+        roteirosAtual = desserializado;
 
-        foreach (DialogoData.Data d in desserializado.dialogos){
-            CriarDialogo(d);
-        }
+        for (var i = 0; i < desserializado.dialogos.Length; i++){
+            Roteiro.Data data = desserializado.dialogos[i];
+            
+            if(!data.opcao){
+                CriarDialogo(data);
+            }else{
+                
+                List<Roteiro.Data> branches = new List<Roteiro.Data>();
+                
+                for (var j = i; j < desserializado.dialogos.Length; j++){
+                    data = desserializado.dialogos[j];
+                
+                    if(data.opcao){
+                        i = j;
+                        branches.Add(data);
+                    }else{
+                        i = j-1;
+                        break;
+                    }
+                }
+                
+                Debug.Log("criando branch");
+                CriarRamoHorizontal(branches, desserializado.ator);
+            }
+                
+        }   
+
+        testDialog.dialogo = Serializar();
+    }
+
+    void CriarRamoHorizontal(List<Roteiro.Data> branches, string ator){
         
+        RamosDialogo options = GameObject.Instantiate(horizontalOption, horizontalOption.transform.parent);
+        options.NOVO_DIALOGO += QuandoRamoHorizontalCriaOpcao;
+        options.ator = roteirosAtual.ator;
+        options.gameObject.SetActive(true);
+
+        options.transform.SetParent(prefabDialogo.transform.parent);
+        options.transform.SetAsLastSibling();
+        btnAddDialogo.transform.parent.SetAsLastSibling();
+        
+        int added = 0;
+
+        foreach (var data in branches){
+            Roteiro opcaoRamo = options.AddRoteiro(null, null, data);
+            
+            if(opcaoRamo != null){
+                opcaoRamo.SETOU_OPCAO += QuandoSetarOpcao;
+                // opcaoRamo.DELETADO += LimparRamo;
+
+                foreach (var childData in data.childrens){
+                    childData._ator = ator;
+
+                    Roteiro roteiroFilho = options.AddRoteiro(null, opcaoRamo.transform, childData);
+                    if(roteiroFilho == null) continue;
+                    
+                    roteiroFilho.DELETADO += LimparFilho;
+                    opcaoRamo.childrens.Add(roteiroFilho);
+                    roteiroFilho.data.parent = opcaoRamo;
+                }
+
+                opcaoRamo.Rebuild();
+            }
+
+            added++;
+
+            if(!options.temEspaco){
+                branches.RemoveRange(0,added);
+                if(branches.Count > 0){
+                    Debug.Log("criar branch");
+                    CriarRamoHorizontal(branches, ator);
+                }
+                break;
+            }
+
+            void LimparRamo(Roteiro excluido){
+                options.roots.Remove(excluido);
+            }
+
+            void LimparFilho(Roteiro excluido){
+                opcaoRamo.childrens.Remove(excluido);
+            }
+        }
     }
 }
