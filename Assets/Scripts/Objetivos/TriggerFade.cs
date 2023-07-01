@@ -7,12 +7,12 @@ using UnityEngine.UI;
 public class TriggerFade : MonoBehaviour
 {
     public static TriggerFade instance;
-    [Header("Configurações do Fade")]
-    public float speedScale = 1f;
-    public AnimationCurve Curve = new AnimationCurve(new Keyframe(0, 1), new Keyframe(0.5f, 0.5f, -1.5f, -1.5f), new Keyframe(1, 0));
-    public float fadeDuration = 1f;
+    [Header("Configuracoes do Fade")]
+    public float ForçaDaCurva = 1f;
+    public AnimationCurve Curva = new AnimationCurve(new Keyframe(0, 1), new Keyframe(0.5f, 0.5f, -1.5f, -1.5f), new Keyframe(1, 0));
+    public float DuraçãoDoFade = 1f;
     public Action Fade;
-    public Image texture;
+    public Image ImagenFade;
     public Color CorInicio;
     public Color CorFim = new Color(0, 0, 0, 1);
 
@@ -34,7 +34,7 @@ public class TriggerFade : MonoBehaviour
     {
         if (JaIniciou) return;
         alpha = 0f;
-        texture.color = Color.Lerp(CorInicio, CorFim, alpha);
+        ImagenFade.color = Color.Lerp(CorInicio, CorFim, alpha);
     }
 
     public void TFade()
@@ -53,10 +53,10 @@ public class TriggerFade : MonoBehaviour
             if (direction == -1)
             {
                 time += Time.fixedDeltaTime;
-                float progress = Mathf.Clamp01(time / fadeDuration);
-                float curveValue = Curve.Evaluate(progress);
+                float progress = Mathf.Clamp01(time / DuraçãoDoFade);
+                float curveValue = Curva.Evaluate(progress);
                 //Debug.Log("Alpha   : " + curveValue);
-                texture.color = Color.Lerp(CorInicio, CorFim, curveValue);
+                ImagenFade.color = Color.Lerp(CorInicio, CorFim, curveValue);
 
                 if (progress >= 1f)
                 {

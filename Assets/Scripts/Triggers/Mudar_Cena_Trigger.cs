@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Mudar_Cena_Trigger : MonoBehaviour
 {
-    public int IndexCena;
+    [Header("Configurações do Trigger")]
+    public int QualCenaTrocar;
     public bool fazPiscar = false;
 
     private bool isTransitioning = false;
@@ -55,7 +56,7 @@ public class Mudar_Cena_Trigger : MonoBehaviour
     private void EmAcabarFadeOut()
     {
         CameraFade.instance.FadeIn();
-        SceneManager.LoadScene(IndexCena);
+        SceneManager.LoadScene(QualCenaTrocar);
         CameraFade.instance.Fadeout -= EmAcabarFadeOut;
 
     }

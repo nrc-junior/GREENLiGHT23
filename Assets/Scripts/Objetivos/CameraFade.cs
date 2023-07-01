@@ -6,14 +6,15 @@ using UnityEngine.UI;
 public class CameraFade : MonoBehaviour
 {
     public static CameraFade instance;
-    public float speedScale = 1f;
-    public AnimationCurve CurveOut = new AnimationCurve(new Keyframe(0, 1), new Keyframe(0.5f, 0.5f, -1.5f, -1.5f), new Keyframe(1, 0));
-    public AnimationCurve CurveIn = new AnimationCurve(new Keyframe(0, 1), new Keyframe(0.5f, 0.5f, -1.5f, -1.5f), new Keyframe(1, 0));
-    public bool startFadedOut = false;
-    public float fadeDuration = 1f;
     public Action Fadeout;
     public Action Fadein;
-    public Image texture;
+    [Header("Configuracoes do Fade")]
+    public float ForçaDaCurva = 1f;
+    public AnimationCurve CurvaOut = new AnimationCurve(new Keyframe(0, 1), new Keyframe(0.5f, 0.5f, -1.5f, -1.5f), new Keyframe(1, 0));
+    public AnimationCurve CurvaIn = new AnimationCurve(new Keyframe(0, 1), new Keyframe(0.5f, 0.5f, -1.5f, -1.5f), new Keyframe(1, 0));
+    public bool ComeçarFadeOut = false;
+    public float DuraçãoDoFade = 1f;
+    public Image ImagenFade;
     public Color CorInicio;
     public Color CorFim = new Color(0, 0, 0, 1);
 
@@ -33,8 +34,8 @@ public class CameraFade : MonoBehaviour
     private void Start()
     {
         if (JaIniciou) return;
-        if (startFadedOut) alpha = 1f; else alpha = 0f;
-        texture.color = Color.Lerp(CorInicio, CorFim, alpha);
+        if (ComeçarFadeOut) alpha = 1f; else alpha = 0f;
+        ImagenFade.color = Color.Lerp(CorInicio, CorFim, alpha);
     }
 
     public void FadeOut()
@@ -66,14 +67,14 @@ public class CameraFade : MonoBehaviour
 
             if(direction == -1)
             {
-                time += (direction * Time.fixedDeltaTime * speedScale);
-                alpha = Mathf.Lerp(0f, 1f, (Mathf.Abs(time) / fadeDuration) * CurveOut.Evaluate(time) * speedScale);
-                texture.color = Color.Lerp(CorInicio, CorFim, alpha);
+                time += (direction * Time.fixedDeltaTime * ForçaDaCurva);
+                alpha = Mathf.Lerp(0f, 1f, (Mathf.Abs(time) / DuraçãoDoFade) * CurvaOut.Evaluate(time) * ForçaDaCurva);
+                ImagenFade.color = Color.Lerp(CorInicio, CorFim, alpha);
                 //Debug.Log("Evaluete: " + CurveOut.Evaluate(time));
                 //Debug.Log("Alpha   : " + alpha);
                 //Debug.Log("Time    : " + time);
 
-                if (-time >= fadeDuration && alpha >= 1)
+                if (-time >= DuraçãoDoFade && alpha >= 1)
                 {
                     Debug.Log("Acabou o Fade");
                     direction = 0;
@@ -83,14 +84,14 @@ public class CameraFade : MonoBehaviour
 
             if (direction == 1)
             {
-                time += (direction * Time.fixedDeltaTime * speedScale);
-                alpha = Mathf.Lerp(1f, 0f, (Mathf.Abs(time) / fadeDuration) * CurveIn.Evaluate(time / fadeDuration) * speedScale);
-                texture.color = Color.Lerp(CorInicio, CorFim, alpha);
+                time += (direction * Time.fixedDeltaTime * ForçaDaCurva);
+                alpha = Mathf.Lerp(1f, 0f, (Mathf.Abs(time) / DuraçãoDoFade) * CurvaIn.Evaluate(time / DuraçãoDoFade) * ForçaDaCurva);
+                ImagenFade.color = Color.Lerp(CorInicio, CorFim, alpha);
                 //Debug.Log("Evaluete: " + CurveOut.Evaluate(time));
                 //Debug.Log("Alpha   : " + alpha);
                 //Debug.Log("Time    : " + time);
 
-                if (time >= fadeDuration && alpha <= 1)
+                if (time >= DuraçãoDoFade && alpha <= 1)
                 {
                     direction = 0;
                     Fadein?.Invoke();
