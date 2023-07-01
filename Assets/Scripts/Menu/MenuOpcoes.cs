@@ -7,13 +7,13 @@ using UnityEngine.Audio;
 
 public class MenuOpcoes : MonoBehaviour
 {
-    [Header("Opções Gráficas:")]
+    [Header("Opcoes Graficas:")]
     public Toggle FullscreeenTog;
     public Toggle VsyncTog;
     public TMP_Dropdown ResolucoesDrop;
     public List<Resolucoes> ResolucoesSuportadas = new List<Resolucoes>();
 
-    [Header("Opções de Áudio:")]
+    [Header("Opcoes de Audio:")]
     public AudioMixer audioMixer;
     public TMP_Text masterLabel, musicaLabel, efeitosLabel;
     public Slider MasterSlider;
