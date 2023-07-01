@@ -1,13 +1,20 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
-using System.Collections;
+
 
 public class Mudar_Cena_Trigger : MonoBehaviour
 {
-    public int IndexCena;
-    public Camera_Fade CameraFade; // Assign this variable in the Inspector
+    [Header("Configurações do Trigger")]
+    public int QualCenaTrocar;
+    public bool fazPiscar = false;
 
     private bool isTransitioning = false;
+    private bool isTriggered = false;
+
+    private void Awake()
+    {
+        //Camera_Fade CameraFade = FindObjectOfType<Camera_Fade>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -16,33 +23,50 @@ public class Mudar_Cena_Trigger : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Entrou no Trigger");
-            StartCoroutine(ChangeScene());
+            Debug.Log(isTriggered);
+            if (fazPiscar && !isTriggered)
+            {
+                Debug.Log("Piscou");
+                isTriggered = true;
+                TriggerFade.instance.TFade();
+                TriggerFade.instance.Fade += triggerAcabou;
+            }
+            else if (!fazPiscar)
+            {
+                ChangeScene();
+            }
         }
     }
 
-    private IEnumerator ChangeScene()
+    private void ChangeScene()
     {
         isTransitioning = true;
 
-        // Check if CameraFade is assigned
-        if (CameraFade != null)
+        if (CameraFade.instance != null)
         {
             // FadeOut
-            Camera_Fade.instance.FadeOut();
-            yield return new WaitForSeconds(CameraFade.fadeDuration);
-
+            CameraFade.instance.FadeOut();
+            CameraFade.instance.Fadeout += EmAcabarFadeOut;
             Debug.Log("Ativou a cena");
-            //SceneManager.LoadScene(IndexCena);
-
-            // FadeIn
-            CameraFade.FadeIn();
-            yield return new WaitForSeconds(CameraFade.fadeDuration);
-        }
-        else
-        {
-            Debug.LogError("CameraFade is not assigned in Mudar_Cena_Trigger.");
         }
 
         isTransitioning = false;
     }
+
+    private void EmAcabarFadeOut()
+    {
+        CameraFade.instance.FadeIn();
+        SceneManager.LoadScene(QualCenaTrocar);
+        CameraFade.instance.Fadeout -= EmAcabarFadeOut;
+
+    }
+
+    private void triggerAcabou()
+    {
+        isTriggered = false;
+        CameraFade.instance.Fadeout -= triggerAcabou;
+    }
 }
+
+
+
