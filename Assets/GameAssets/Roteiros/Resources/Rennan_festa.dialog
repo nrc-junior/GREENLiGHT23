@@ -1,0 +1,272 @@
+{
+    "ator": "Mercador",
+    "dialogos": [
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "E aí, Telles?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "AH, aqui é o Rennan!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Perdão?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Meh, relaxa!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": true,
+            "opcao": true,
+            "textoDialogo": "Você anda bem?",
+            "textoEscutarEvento": "Rennan e Rafael",
+            "textoDispararEvento": "",
+            "retornar": true,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Ah, sim, por quê?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Não, é que seu amigo o-",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Rafael? Ah, eu tô bem sim",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Nossa, que...",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "É, eu já superei, a gente conversava mais na pesca mesmo, não éramos tão próximos assim.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Só na pesca?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Bem, não importa muito, ele já se foi.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Sinto muito.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Você deveria dizer isso para a filha dele. Anna que fica colada nela, parece carrapato.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Se eu achasse ela...",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Minha filha é comportada?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": true,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "É sim, até demais às vezes.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Até demais?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Com certeza, nem xinga.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Lá em casa ela é toda revoltada",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Gasta tudo de paciência comigo então.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Provavelmente.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Até depois!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Até!",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        }
+    ]
+}

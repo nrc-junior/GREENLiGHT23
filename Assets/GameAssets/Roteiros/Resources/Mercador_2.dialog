@@ -1,0 +1,585 @@
+{
+    "ator": "Mercador",
+    "dialogos": [
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Opa! Rennan!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Fascinante.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Como?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Você tem 50% de chance de acertar, e erra toda vez.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Ih...",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Qual a semente de hoje, Chad?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Ah, eu queria falar um pouco contigo na verdade.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Interessante... O que, exatamente?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": true,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Essa Sofia, quem é ela, exatamente?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "E quem é Rafael?",
+            "retornar": true,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Ela é filha de Rafael, e também gosta muito de música.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "O que você acha dela?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Bem, ela raramente vem aqui e mal encontro ela pela vila, mas ela sempre foi gentil comigo.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Ela é confiável?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Chad, ela é rica.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Nada mais a acrescentar?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Preciso?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": true,
+            "ouvirEvento": true,
+            "opcao": true,
+            "textoDialogo": "E quem ´é esse Rafael?",
+            "textoEscutarEvento": "E quem é Rafael?",
+            "textoDispararEvento": "Rennan e Rafael",
+            "retornar": true,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Grande amigo nosso, sempre vem aqui falar comigo, é mais extrovertido, às vezes irritante.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Como que ele é rico?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Proprietário da maior parte das terras nas redondezas.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Algo mais que eu deva saber?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Ele é membro da Igreja, faz trabalho comunitário com o dinheiro que tem das terras e é viúvo.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Quanto dinheiro?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Não o suficiente.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Como que eu diferencio você do seu irmão?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": true,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Um pesca, o outro vende.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Mas eu já vi o Rennan vendendo.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Não é exclusivo, um pesca, o outro vende",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "E tem algo físico que diferencia voc-",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Não.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Nada?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Não.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "...",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Minha filha é comportada?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": true,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Fascinante.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "...?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Você tem 50% de chance de acertar, e erra toda vez.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "...",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Okay, obrigado Telles! ",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Por nada, quer alguma semente também ou veio só me ver?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Ah sim, eu gostaria da de",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Cacau",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Tome!",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Batata-Doce",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Tome!",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Trigo",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Tome!",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Milho",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Tome!",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Até mais!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Até.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        }
+    ]
+}

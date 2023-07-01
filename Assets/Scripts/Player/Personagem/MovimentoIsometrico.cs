@@ -49,6 +49,9 @@ public class MovimentoIsometrico : MonoBehaviour {
         rb.MovePosition(rb.position + ((direcao * velocidade) * Time.fixedDeltaTime));
     }
 
+    public void Teleportar(Transform alvo){
+        Teleportar(alvo.position);
+    }
     public void Teleportar(Vector3 posicao){
         transform.position = posicao;
         posicao.z = cam.position.z;

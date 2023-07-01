@@ -1,0 +1,214 @@
+{
+    "ator": "Anna",
+    "dialogos": [
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Ei pai, é hoje!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Que que tem hoje? Aniversário da sua bonequinha de palha?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Que? Não, vai demorar ainda.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Pera, você realmente comemora o aniversário dela?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Hoje é a festa! Bem legal né, festa, pessoas, comida, bebida, música.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "...",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Que foi?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Nada.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Tá bom então, MASSS você VAI vir para a festa e eu não quero nem saber!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Desde quando a gente inverteu papéis mocinha?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Ah paiiii, você tem que vir, é de longe a coisa mais interessante que vai acontecer até o próximo ano!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "...",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Por favooor? ",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Sua amiga vai ir?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Eu não sei, provavelmente não, ela não sai de casa direito desde que o pai... enfim. Espero que ela vá, mas eu sinceramente acho que não vai acontecer.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Tá bom.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "EBAAAAAAAAAAAAAAAAAA!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Se eu não gostar eu vou embora!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "No seu direito, meu velho!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        }
+    ]
+}

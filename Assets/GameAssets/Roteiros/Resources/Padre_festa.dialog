@@ -1,0 +1,504 @@
+{
+    "ator": "Padre João",
+    "dialogos": [
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Boa noite, deseja saber algo?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Ei padre, eu...",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "É seguro fazer uma festa no meio de uma epidemia?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": true,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Sim.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Mesmo?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Não espere uma outra resposta.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Mas é que-",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Deus está protegendo esse evento, nada que não fosse acontecer sem esse evento vai acontecer.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Então se alguém pegar a doença aqui, iria acontecer independente da festa?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Sim.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Se você fosse um animal, qual seria?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": true,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "...",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Ovelha.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Por que Deus é seu pastor-",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "E ele me guiará.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Outra opção?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Anu-Branco.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "MINHA FILHA TAMBÉM DISSE ISSO!",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Eles se parecem comigo, se você queria que a resposta fosse assim",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Perfeito.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Pode me deixar em paz, agora? Preciso tratar algo com meus devotos.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "... entendido.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Desculpa.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Até depois!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Até.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": true,
+            "opcao": true,
+            "textoDialogo": "Tô preocupado com minha filha, ela tá com medo do Demônio do Bosque, pode me falar melhor sobre o demônio?",
+            "textoEscutarEvento": "Anna Acanhada",
+            "textoDispararEvento": "",
+            "retornar": true,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "O demônio é uma entidade que nos atormenta há muitos anos, às vezes com mais intensidade, às vezes com menos.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Apesar de alguns alegarem o ver, ele é mais uma manifestação espiritual do que qualquer coisa, e você pode confiar na Igreja mais do que em qualquer pessoa.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Para evitar ser tentado ou atacado pelo demônio, recomendamos que passem a maior parte do tempo em casa e não façam muito alarde. Fiquem quietos e calmos, e sigam o que a Igreja falar.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Antes, recomendávamos que se comprasse os produtos anti-dêmonio do Rafael, mas...",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Anti-demônio?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Alguns produtos que afastam o demônio do bosque, principalmente água benta e cerâmicas que impedem o demônio de entrar na sua casa e persuadir sua família.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Compreendido, mas e minha filha, padre?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Sua filha precisa se comportar melhor.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Mas ela é bem comportada e muito bem educada!",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Educada em desrespeito? Vejo que foi muito bem ensinada, então.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Me perdoe, mas no que ela te desrespeita, bom senhor?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "O jeito que ela anda, o jeito que ela fala, que ela se veste, como ela deixa seu cabelo solto... Nada cristão.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Padre, me desculpe, mas muita culpa disso é não termos roupas necessárias. Ela anda meio torta pela fome, nossa fazenda é pequena e-",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Ela é amiga de Sofia, não? Deveria ter tomado os bons modos dela visto todo o tempo em que passou com ela.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "... Certo padre, falarei com ela, amanhã.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        }
+    ]
+}

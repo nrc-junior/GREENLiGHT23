@@ -1,0 +1,815 @@
+{
+    "ator": "Anna",
+    "dialogos": [
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "PAAAAAAAAAAAAAAAAAAAAI!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Eu não vou gritar de volta.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "VEM CÁ!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Quem deixou ela preguiçosa?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Então pai, a gente tem que conversar.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Converse, então.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Por que o senhor não sai de casa e conversa com os moradores? Ein?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Que tipo de pergunta é essa?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Qual foi a última vez que você saiu de casa e falou com alguém?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Ontem.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Ata. E você acha que eu acredito.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Não acho.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "...",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Eu só não quero falar, certo?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": true,
+            "opcao": true,
+            "textoDialogo": "Eu ainda tenho medo, filha.",
+            "textoEscutarEvento": "Não vai ficar tudo bem.",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Medo do quê?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "...",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "O Telles conta?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Não.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "E o Renan?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Sério?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Eu tinha que tentar né?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Deixa eu cuidar da minha plantação.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Conversar com outras pessoas não te impede de plantar comida, pai.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Demanda tempo.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Você fica em casa sem fazer nada quando não tem coisa da plantação para fazer. Por HORAS.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Seu pai já está mais velho do que você pensa.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Para de mentir pra mim, por favor?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": true,
+            "ouvirEvento": true,
+            "opcao": true,
+            "textoDialogo": "...Tá.",
+            "textoEscutarEvento": "Não vai ficar tudo bem.",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": [
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Filha, é o seguinte.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Do que me adiantam alguns escassos e sem sentido bons momentos?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Tudo que eu preciso na minha vida está em pé bem na minha frente. Não preciso de mais pessoas que você.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": " Pai...",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "As pessoas iludem, ferem a alma, pecam e desaparecem. Você é a única diferente.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "A única?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "...",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Eu não estou gostando do destino dessa conversa pai, vai realmente se isolar sem mais nem menos? ",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Não era você que queria um novo recomeço, uma nova vida?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "E não abre mão de ficar uma horinha por dia conversando com pessoas legais?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Eu... eu não sei.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Você sabe.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "N´ós.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Eu não estou mentindo filha.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Faça do seu jeito então, eu tô indo lá",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Espera filha...",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Tá disposto então, ao menos?",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Talvez.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": true,
+            "textoDialogo": "Eu... preciso de tempo.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": [
+                {
+                    "falaDoProtagonista": false,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Três meses inteirinhos é mais que o tempo suficiente.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                },
+                {
+                    "falaDoProtagonista": true,
+                    "disparaEvento": false,
+                    "ouvirEvento": false,
+                    "opcao": false,
+                    "textoDialogo": "Não filha. Foi para ti, não para mim.",
+                    "textoEscutarEvento": "",
+                    "textoDispararEvento": "",
+                    "retornar": false,
+                    "childrens": []
+                }
+            ]
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Por favor... ao menos tente falar com o pessoal, uma vez, eu posso ir contigo, okay?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Um outro dia, mas eu prometo que tento, por você.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Quando que você vai aprender?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "...?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Nossas vidas são separadas, não se force a limitar sua felicidade a mim.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Eu só quero te-",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "proteger? A gente mora numa vila de dezenas de habitantes, não numa cidade, você não precisa me proteger de ninguém, não tem ameaças aqui.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Eu sei que você quer procurar algo para me proteger, mas a nossa vida nunca foi tão tranquila. Talvez você só devesse fazer coisas que te deixam feliz?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Quando que você vai entender?",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Pelo visto, não por agora.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "...",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "...",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Eu marquei algo com Sofia, aquela menina rica, a gente vai jogar conversa fora, eu até poderia te chamar para ir comigo, mas né.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Se divirta com sua amiga, Anna.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Ai pai, não consigo ficar brava contigo. Desculpa se peguei um pouco pesado...",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Não, você está certa. Talvez seu velho tenha esquecido o caminho para as casas.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Besta.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Sempre.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": false,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Vou lá pai, depois te conto como foi!",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        },
+        {
+            "falaDoProtagonista": true,
+            "disparaEvento": false,
+            "ouvirEvento": false,
+            "opcao": false,
+            "textoDialogo": "Até mais tarde, filha.",
+            "textoEscutarEvento": "",
+            "textoDispararEvento": "",
+            "retornar": false,
+            "childrens": []
+        }
+    ]
+}

@@ -20,15 +20,11 @@ public class Dialogo : Objetivo {
         }
     }
 
+    public bool loopable = true;
     public bool estaAtivo = true;
     public string dialogoNome;
 
     public string dialogo {get; set;}
-
-    void Start()    {
-        
-    }
-
 
     protected virtual void Update()  {
         if(!playerEstaNoTrigger) return;
@@ -39,12 +35,12 @@ public class Dialogo : Objetivo {
     }
     
     protected virtual void PlayDialog(){
-        if(string.IsNullOrEmpty(dialogo)){
-            ControladorDialogo.instancia.CarregarDialogo(dialogoNome);
-        }else{
             ControladorDialogo.instancia.TocarDialogo(dialogo);
-        }
+            if(!loopable) 
+                estaAtivo = false;
     }
+    
+}
 
     // protected override void OnTriggerEnter2D(Collider2D col){
     //     base.OnTriggerEnter2D(col);
@@ -53,4 +49,3 @@ public class Dialogo : Objetivo {
     // protected override void OnTriggerExit2D(Collider2D col){
     //     base.OnTriggerExit2D(col);
     // }
-}
