@@ -28,7 +28,7 @@ public class Mudar_Cena_Trigger : MonoBehaviour
         if (CameraFade != null)
         {
             // FadeOut
-            CameraFade.FadeOut();
+            Camera_Fade.instance.FadeOut();
             yield return new WaitForSeconds(CameraFade.fadeDuration);
 
             Debug.Log("Ativou a cena");

@@ -18,6 +18,10 @@ public class Camera_Fade : MonoBehaviour
     private int direction = 0;
     private float time = 0f;
 
+    void Awake(){
+        instance = this;
+    }
+    
     private void Start()
     {
         if (startFadedOut) alpha = 1f; else alpha = 0f;

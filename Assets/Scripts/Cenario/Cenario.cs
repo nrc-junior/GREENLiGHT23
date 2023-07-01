@@ -12,6 +12,9 @@ public class Cenario : MonoBehaviour {
     
     /// <remarks> PS: Desinscrever do evento antes de sair da cena. </remarks>
     public static Action<Vector3> TELEPORTAR_PLAYER;
+    void Awake(){
+        instance = this;
+    }
     
     public void AtivarCenario(bool ligarInterior){
         if(ligarInterior){

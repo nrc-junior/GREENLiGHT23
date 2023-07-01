@@ -160,6 +160,10 @@ PrefabInstance:
       propertyPath: dig
       value: 
       objectReference: {fileID: 3360926867689652525}
+    - target: {fileID: 4233951431900516574, guid: 38f51d678a07b144a889a0bba1599f80, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6194130996740752041, guid: 38f51d678a07b144a889a0bba1599f80, type: 3}
       propertyPath: m_Name
       value: Cenario
@@ -228,11 +232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8993741422926870312, guid: c447b705ee5047b459f453a4ac12ed1a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.32
+      value: -1.79
       objectReference: {fileID: 0}
     - target: {fileID: 8993741422926870312, guid: c447b705ee5047b459f453a4ac12ed1a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.06
+      value: 5.27
       objectReference: {fileID: 0}
     - target: {fileID: 8993741422926870312, guid: c447b705ee5047b459f453a4ac12ed1a, type: 3}
       propertyPath: m_LocalPosition.z

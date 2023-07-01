@@ -530,12 +530,12 @@ TextureImporter:
       name: teste_21
       rect:
         serializedVersion: 2
-        x: 529
+        x: 530
         y: 137
-        width: 30
+        width: 29
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4827586, y: 0.4375}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -618,8 +618,8 @@ TextureImporter:
         y: 137
         width: 28
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4375}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1429,6 +1429,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: teste_62
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 89
+        width: 29
+        height: 16
+      alignment: 9
+      pivot: {x: 0.4827586, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934515af847fb9440844566daadccbd6
+      internalID: 1893592223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teste_63
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 89
+        width: 28
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1106a7b6f656a7d49ab87bf94de42ebe
+      internalID: 1664445331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1480,6 +1522,7 @@ TextureImporter:
       teste_46: 1191106100
       teste_38: 1216699404
       teste_19: -318455855
+      teste_63: 1664445331
       teste_59: -951849319
       teste_0: -1210558557
       teste_28: 1648067612
@@ -1499,6 +1542,7 @@ TextureImporter:
       teste_61: -1598745584
       teste_25: 2042267032
       teste_11: -866221550
+      teste_62: 1893592223
       teste_30: -1442212974
       teste_16: 1215208365
       teste_36: -197546654

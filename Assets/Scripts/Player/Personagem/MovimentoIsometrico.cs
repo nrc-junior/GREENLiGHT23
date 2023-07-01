@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MovimentoIsometrico : MonoBehaviour {
     private Rigidbody2D rb;
+    Transform cam;
 
     [SerializeField] float velocidade = 1;
     Vector2 direcao;
@@ -19,6 +20,7 @@ public class MovimentoIsometrico : MonoBehaviour {
 
     void Awake(){
         rb = GetComponent<Rigidbody2D>();
+        cam = Camera.main.transform;
         Cenario.TELEPORTAR_PLAYER += Teleportar;
     }
 
@@ -48,6 +50,8 @@ public class MovimentoIsometrico : MonoBehaviour {
     }
 
     public void Teleportar(Vector3 posicao){
-
+        transform.position = posicao;
+        posicao.z = cam.position.z;
+        cam.position = posicao;
     }
 }
