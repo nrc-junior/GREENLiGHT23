@@ -20,6 +20,8 @@ public class ChangeActive : MonoBehaviour {
 
 
     public void Awake(){
+        target ??= gameObject;
+        
         if(executeOrder == STATE.Awake){
             target.SetActive(setActive);
             if(targets.Length > 0){

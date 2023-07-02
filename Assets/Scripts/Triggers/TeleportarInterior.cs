@@ -6,7 +6,7 @@ public class TeleportarInterior : Objetivo {
     public bool habilitado = true;
     [SerializeField] bool ligarInterior;
     [SerializeField] Transform pontoTeleporte;
-
+    
 
     void Awake(){
         if(habilitado && pontoTeleporte == null){
@@ -31,8 +31,18 @@ public class TeleportarInterior : Objetivo {
 
     protected virtual void TeleportarPlayer(Vector3 posicao){
         // todo fade in antes de chamar 
-        Cenario.instance.AtivarCenario(ligarInterior);
-        Cenario.TELEPORTAR_PLAYER?.Invoke(posicao);
+        Fade.instance.duracaoFade = 1;
+        Fade.instance.delay = 1;
+        Fade.instance.FadeOut();
+        
+        Fade.instance.FADEOUT_COMPLETE += Teleporta;
+
+        void Teleporta(){
+            Fade.instance.FADEOUT_COMPLETE -= Teleporta;
+            Cenario.instance.AtivarCenario(ligarInterior);
+            Cenario.TELEPORTAR_PLAYER?.Invoke(posicao);
+            Fade.instance.FadeIn();
+        }
     } 
 
     protected override void OnTriggerEnter2D(Collider2D col){

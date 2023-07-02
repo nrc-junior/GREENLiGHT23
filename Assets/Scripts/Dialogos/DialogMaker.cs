@@ -98,10 +98,10 @@ public class DialogMaker : Dialogo {
     void Voltar(){
         uiCriarDialogos.SetActive(false);
         controle.travado = false;
-        testDialog.dialogo = Serializar();
+        testDialog.roteiro = Serializar();
     }
 
-    protected override void PlayDialog(){
+    public override void PlayDialog(){
         uiCriarDialogos.SetActive(true);
         controle.travado = true;
 
@@ -342,7 +342,7 @@ public class DialogMaker : Dialogo {
                 
         }   
 
-        testDialog.dialogo = Serializar();
+        testDialog.roteiro = Serializar();
     }
 
     void CriarRamoHorizontal(List<Roteiro.Data> branches, string ator){

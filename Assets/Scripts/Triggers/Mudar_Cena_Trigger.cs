@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mudar_Cena_Trigger : MonoBehaviour
 {
-    [Header("Configurações do Trigger")]
+    [Header("Configuraï¿½ï¿½es do Trigger")]
     public int QualCenaTrocar;
     public bool fazPiscar = false;
 
@@ -42,11 +42,11 @@ public class Mudar_Cena_Trigger : MonoBehaviour
     {
         isTransitioning = true;
 
-        if (CameraFade.instance != null)
+        if (Fade.instance != null)
         {
             // FadeOut
-            CameraFade.instance.FadeOut();
-            CameraFade.instance.Fadeout += EmAcabarFadeOut;
+            Fade.instance.FadeOut();
+            Fade.instance.FADEOUT_COMPLETE += EmAcabarFadeOut;
             Debug.Log("Ativou a cena");
         }
 
@@ -55,16 +55,16 @@ public class Mudar_Cena_Trigger : MonoBehaviour
 
     private void EmAcabarFadeOut()
     {
-        CameraFade.instance.FadeIn();
+        Fade.instance.FadeIn();
         SceneManager.LoadScene(QualCenaTrocar);
-        CameraFade.instance.Fadeout -= EmAcabarFadeOut;
+        Fade.instance.FADEOUT_COMPLETE -= EmAcabarFadeOut;
 
     }
 
     private void triggerAcabou()
     {
         isTriggered = false;
-        CameraFade.instance.Fadeout -= triggerAcabou;
+        Fade.instance.FADEOUT_COMPLETE -= triggerAcabou;
     }
 }
 

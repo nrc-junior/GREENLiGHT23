@@ -8,13 +8,14 @@ public class PlayerReach : Objetivo {
     public bool disable = true;
     public bool destroy = false;
 
-    // public UnityEvent OnReach = new UnityEvent();
+    public UnityEvent OnReach = new UnityEvent();
+
     protected override void OnTriggerEnter2D(Collider2D col){
         base.OnTriggerEnter2D(col);
         if(playerEstaNoTrigger){
             Orquestrador.instance.ReceiveIntermediateEvent(dispatchOnReach);
             
-            // OnReach?.Invoke();
+            OnReach?.Invoke();
         
             if(disable){
                 gameObject.SetActive(false);

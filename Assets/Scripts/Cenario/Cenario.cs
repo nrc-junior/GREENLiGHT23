@@ -8,8 +8,9 @@ public class Cenario : MonoBehaviour {
 
     [SerializeField] GameObject exterior;
     [SerializeField] GameObject interiores;
+    [SerializeField] LightColor sun;
+    public bool IsDay {get; set;} = true;
 
-    
     /// <remarks> PS: Desinscrever do evento antes de sair da cena. </remarks>
     public static Action<Vector3> TELEPORTAR_PLAYER;
     void Awake(){
@@ -20,9 +21,11 @@ public class Cenario : MonoBehaviour {
         if(ligarInterior){
             interiores.SetActive(true);
             exterior.SetActive(false);
+            sun.SetColor(true);
         }else{
             interiores.SetActive(false);
             exterior.SetActive(true);
+            sun.SetColor(IsDay);
         }
     }
 }

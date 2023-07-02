@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Dialogo : Objetivo {
@@ -10,6 +11,7 @@ public class Dialogo : Objetivo {
         public Data(){
 
         }
+
         public Data(string nome, Roteiro.Data[] dialogos = null){
             ator = nome;
 
@@ -19,12 +21,24 @@ public class Dialogo : Objetivo {
             }
         }
     }
+    
+    public GameObject onPlayHide;
 
     public bool loopable = true;
     public bool estaAtivo = true;
     public string dialogoNome;
 
-    public string dialogo {get; set;}
+    string _rot;
+    public string roteiro {get => _rot; set
+        {
+            _rot = value;
+            
+            if(!string.IsNullOrEmpty(_rot) && onPlayHide){
+                onPlayHide.SetActive(true);
+        }
+        }
+    }
+    public Action QUIT;
 
     protected virtual void Update()  {
         if(!playerEstaNoTrigger) return;
@@ -34,12 +48,17 @@ public class Dialogo : Objetivo {
         PlayDialog();
     }
     
-    protected virtual void PlayDialog(){
-            ControladorDialogo.instancia.TocarDialogo(dialogo);
-            if(!loopable) 
-                estaAtivo = false;
-    }
+    public virtual void PlayDialog(){
+        if(!string.IsNullOrEmpty(roteiro))
+
+        ControladorDialogo.instancia.TocarDialogo(this);
+        if(!loopable) 
+            roteiro = null;
     
+        if(onPlayHide){
+            onPlayHide.SetActive(false);
+        }
+    }
 }
 
     // protected override void OnTriggerEnter2D(Collider2D col){

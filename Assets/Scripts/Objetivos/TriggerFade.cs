@@ -8,9 +8,9 @@ public class TriggerFade : MonoBehaviour
 {
     public static TriggerFade instance;
     [Header("Configuracoes do Fade")]
-    public float ForçaDaCurva = 1f;
+    // public float Forï¿½aDaCurva = 1f;
     public AnimationCurve Curva = new AnimationCurve(new Keyframe(0, 1), new Keyframe(0.5f, 0.5f, -1.5f, -1.5f), new Keyframe(1, 0));
-    public float DuraçãoDoFade = 1f;
+    // public float Duraï¿½ï¿½oDoFade = 1f;
     public Action Fade;
     public Image ImagenFade;
     public Color CorInicio;
@@ -53,17 +53,17 @@ public class TriggerFade : MonoBehaviour
             if (direction == -1)
             {
                 time += Time.fixedDeltaTime;
-                float progress = Mathf.Clamp01(time / DuraçãoDoFade);
-                float curveValue = Curva.Evaluate(progress);
+                // float progress = Mathf.Clamp01(time / Duraï¿½ï¿½oDoFade);
+                // float curveValue = Curva.Evaluate(progress);
                 //Debug.Log("Alpha   : " + curveValue);
-                ImagenFade.color = Color.Lerp(CorInicio, CorFim, curveValue);
+                // ImagenFade.color = Color.Lerp(CorInicio, CorFim, curveValue);
 
-                if (progress >= 1f)
-                {
-                    Debug.Log("Fade concluído");
-                    direction = 0;
-                    Fade?.Invoke();
-                }
+                // if (progress >= 1f)
+                // {
+                //     Debug.Log("Fade concluï¿½do");
+                //     direction = 0;
+                //     Fade?.Invoke();
+                // }
 
             }
             yield return new WaitForFixedUpdate();

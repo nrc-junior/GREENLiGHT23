@@ -80,16 +80,16 @@ public class ControladorDialogo : MonoBehaviour{
     bool retonaPraUltimaOpcao;
     Roteiro.Data[] ramoOpcao;
     int idxJ = 0;
-
     bool estaEscolhendo;
+    Dialogo dialogoAtual;
 
-    public void TocarDialogo(string dialogo){
+    public void TocarDialogo(Dialogo dialogo){
         if(tocando) return;
-        
+        dialogoAtual = dialogo;
         movimento.travado = true;
         tocando = true;
 
-        Dialogo.Data data = JsonUtility.FromJson<Dialogo.Data>(dialogo);
+        Dialogo.Data data = JsonUtility.FromJson<Dialogo.Data>(dialogo.roteiro);
         
         idx = 0;
         nomeCoadjuvante = data.ator;
@@ -232,6 +232,8 @@ public class ControladorDialogo : MonoBehaviour{
         tocando = false;
         canvas.gameObject.SetActive(false);
         movimento.travado = false;
+        dialogoAtual?.QUIT?.Invoke();
+        dialogoAtual = null;
         return;
     }
     

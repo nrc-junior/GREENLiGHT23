@@ -1471,6 +1471,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: teste_64
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 73
+        width: 28
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dcad84e3682af4e95a745fd363c367
+      internalID: -397703216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1519,6 +1540,7 @@ TextureImporter:
       teste_23: -277991637
       teste_14: 1214357100
       teste_45: -1223823720
+      teste_64: -397703216
       teste_46: 1191106100
       teste_38: 1216699404
       teste_19: -318455855
