@@ -11,14 +11,10 @@ public class Mudar_Cena_Trigger : MonoBehaviour
     private bool isTransitioning = false;
     private bool isTriggered = false;
 
-    private void Awake()
-    {
-        //Camera_Fade CameraFade = FindObjectOfType<Camera_Fade>();
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (isTransitioning) return; // Ignore triggers while transitioning
+        if (isTransitioning) return;
 
         if (other.gameObject.CompareTag("Player"))
         {
